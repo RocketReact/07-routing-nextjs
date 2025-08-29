@@ -12,3 +12,13 @@ export interface CreateNote {
   content: string;
   tag: string;
 }
+
+const tagsList: string[] = [
+  "All",
+  "Work",
+  "Personal",
+  "Meeting",
+  "Shopping",
+  "Todo",
+];
+export default tagsList;

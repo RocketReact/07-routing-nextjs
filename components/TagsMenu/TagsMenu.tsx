@@ -4,14 +4,7 @@ import css from "./TagsMenu.module.css";
 import Link from "next/link";
 import { useState } from "react";
 import { FaCaretDown, FaCaretUp } from "react-icons/fa";
-const tagsList: string[] = [
-  "All",
-  "Work",
-  "Personal",
-  "Meeting",
-  "Shopping",
-  "Todo",
-];
+import tagsList from "@/types/note";
 export default function TagsMenu() {
   const [isOpen, setIsOpen] = useState(false);
   const toggle = () => setIsOpen(!isOpen);
